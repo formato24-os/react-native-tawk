@@ -1,0 +1,35 @@
+{
+  "name": "react-native-tawk",
+  "version": "1.0.0",
+  "description": "tawk.to live chat for React Native and Expo: full-screen widget, visitor name and attributes, status and events back to your app, web support. By Formato24.",
+  "keywords": ["react-native", "expo", "tawk", "tawk.to", "live-chat", "chat", "support", "webview", "customer-support"],
+  "homepage": "https://github.com/formato24-os/react-native-tawk#readme",
+  "repository": { "type": "git", "url": "git+https://github.com/formato24-os/react-native-tawk.git" },
+  "bugs": "https://github.com/formato24-os/react-native-tawk/issues",
+  "author": "Formato24 <info@formato24.com> (https://www.formato24.com)",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "react-native": "lib/index.js",
+  "files": ["lib", "src", "NOTICE", "README.it.md"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "prepublishOnly": "npm test"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-webview": ">=13"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "react": "19.2.3",
+    "react-native": "0.87.0",
+    "react-native-webview": "14.0.1",
+    "typescript": "5.9.3"
+  }
+}
